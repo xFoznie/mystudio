@@ -18,14 +18,6 @@ async def кто(ctx, *, message):
 	await ctx.send('{text} пидрила!'.format(text = message))
 	
 @client.command()
-async def "кто я"(ctx):
-	await ctx.send('Ты пидрила!')
-	
-@client.command()
-async def "кто ты"(ctx):
-	await ctx.send('Я не пидр!')
-	
-@client.command()
 async def Кто(ctx, *, message):
 	await ctx.send('{text} пидрила!'.format(text = message))
 
