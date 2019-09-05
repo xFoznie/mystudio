@@ -10,13 +10,18 @@ allroles=['Великие правители','Суровые выживальщ
 
 @client.event
 async def on_ready():
-	await client.change_presence(status = discord.Status.idle, activity = discord.Game('Напиши help'))
+	await client.change_presence(status = discord.Status.idle, activity = discord.Game('Напиши Начать'))
 	print('Bot is online!')
 
 
 @client.command()
-async def help(ctx):
+async def Начать(ctx):
 	await ctx.send('Приветствую тебя на нашей базе, {memb}! /n Для того, чтобы ты смог заходить в голосовые чаты своей игры, тебе нужно иметь определеную роль, которую ты можешь получить набрав giverole "роль без кавычек" /n Список доступных ролей: /n Minecraft - Суровые выживальщики и строители /n Civilization - Великие правители /n WoT/WoW/WarThunder - Заднеприводные танкисты Панцерваффе /n Garry s Mod - Верные слуги Германии /n Dota2 - ДотоРотер /n CS:GO - Коэсер /n Paladins - Овердрочеры /n Deceit - Буу блять /n GTA5 - факинг ю рашен геймерс жта фор ЮСА /n ASTRONEER - Изучатели черных дыр'.format(memb = member))
+
+@client.command()
+async def начать(ctx):
+	await ctx.send('Приветствую тебя на нашей базе, {memb}! /n Для того, чтобы ты смог заходить в голосовые чаты своей игры, тебе нужно иметь определеную роль, которую ты можешь получить набрав giverole "роль без кавычек" /n Список доступных ролей: /n Minecraft - Суровые выживальщики и строители /n Civilization - Великие правители /n WoT/WoW/WarThunder - Заднеприводные танкисты Панцерваффе /n Garry s Mod - Верные слуги Германии /n Dota2 - ДотоРотер /n CS:GO - Коэсер /n Paladins - Овердрочеры /n Deceit - Буу блять /n GTA5 - факинг ю рашен геймерс жта фор ЮСА /n ASTRONEER - Изучатели черных дыр'.format(memb = member))
+
 
 
 @client.command()
