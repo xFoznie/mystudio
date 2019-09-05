@@ -40,3 +40,4 @@ async def giverole(ctx, *, message):
 	await discord.Member.add_roles(user, role)
 
 token = os.environ.get('BOT_TOKEN')
+client.run(token)
