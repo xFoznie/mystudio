@@ -14,8 +14,8 @@ async def ping(ctx):
 roll=['Великие правители','Суровые выживальщики и строители','Верные слуги Германии','Заднеприводные танкисты Панцерваффе','Рыцари ЧСВешного стола','Овердрочеры','Буу блять','Коэсер','ДотоРотер','Изучатели черных дыр','опущеный']
 
 @client.command()
-async def sanya(ctx):
-	await ctx.send('Саня пидр!')
+async def кто(ctx, *, message):
+	await ctx.send('{text} пидр!'.format(text = message))
 
 @client.command()
 async def creeper(ctx):
