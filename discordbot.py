@@ -8,9 +8,9 @@ client = commands.Bot(command_prefix = "")
 async def on_ready():
 	print('Bot is online!)
 
-@client.event
-async def on_member_join(member):
-	await ctx.send('Приветствую тебя на нашей базе, {memb}! /n Для того, чтобы ты смог заходить в голосовые чаты своей игры, тебе нужно иметь определеную роль, которую ты можешь получить набрав giverole "роль без кавычек" /n Список доступных ролей: /n Minecraft - Суровые выживальщики и строители)
+#@client.event
+#async def on_member_join(member):
+#	await ctx.send('Приветствую тебя на нашей базе, {memb}! /n Для того, чтобы ты смог заходить в голосовые чаты своей игры, тебе нужно иметь определеную роль, которую ты можешь получить набрав giverole "роль без кавычек" /n Список доступных ролей: /n Minecraft - Суровые выживальщики и строители)
 
 
 @client.command()
@@ -20,10 +20,15 @@ roll=['Великие правители','Суровые выживальщик
 
 @client.command()
 async def кто(ctx, *, message):
+	lenght = len(message)
+	if (message[lenght-1] == '?'):
+		message = message[;-1]
 	await ctx.send('{text} пидрила!'.format(text = message))
 	
 @client.command()
 async def Кто(ctx, *, message):
+	if (message[lenght-1] == '?'):
+		message = message[;-1]
 	await ctx.send('{text} пидрила!'.format(text = message))
 
 @client.command()
