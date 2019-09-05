@@ -16,6 +16,10 @@ roll=['Великие правители','Суровые выживальщик
 @client.command()
 async def кто(ctx, *, message):
 	await ctx.send('{text} пидрила!'.format(text = message))
+	
+@client.command()
+async def Кто(ctx, *, message):
+	await ctx.send('{text} пидрила!'.format(text = message))
 
 @client.command()
 async def creeper(ctx):
