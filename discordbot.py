@@ -10,7 +10,7 @@ allroles=['Великие правители','Суровые выживальщ
 
 @client.event
 async def on_ready():
-	await client.change_presence(status = discord.Status.idle, activity = discord.Game('Напиши Начать'))
+	await client.change_presence(status = discord.Status.online, activity = discord.Game('Напиши Начать'))
 	print('Bot is online!')
 
 
