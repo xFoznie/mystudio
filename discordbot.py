@@ -72,8 +72,10 @@ async def giverole(ctx, *, message):
 	role = discord.utils.get(user.guild.roles, name = message)
 	if (message in allroles):
 		await discord.Member.add_roles(user, role)
+		await ctx.send('Роль {name.mention} успешно выдана!'.format(name = role))
+
 	else:
-		await ctx.send('Роль "{name}" недоступна, либо возникла опечатка.'.format(name = message))
+		await ctx.send('Роль "{name.mention}" недоступна, либо возникла опечатка.'.format(name = role))
 	
 
 """@client.command()
