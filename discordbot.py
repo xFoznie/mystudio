@@ -27,7 +27,7 @@ async def начать(ctx):
 
 @client.command()
 async def ping(ctx):
-	await ctx.send('Pong!')
+	await ctx.send('Pong')
 
 
 @client.command()
