@@ -3,7 +3,7 @@ import discord
 from datetime import datetime, date, time
 
 TRIAL = 617690428057059338
-TOKEN_AUTH = "NDIxNjU4OTg5MjQ0NDQ4Nzc4.X0DZVg.uS4Y53WoBmawtUsOSvdkswagTKA"
+TOKEN_AUTH = "NDIxNjU4OTg5MjQ0NDQ4Nzc4.X4m5xw.kdA6bGyUlz97D-fDUKtzLv8mdEg"
 prekl = 'Осуждаю!'
 blacklist = set()
 
