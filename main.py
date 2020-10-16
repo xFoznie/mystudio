@@ -19,7 +19,7 @@ def start():
         d = date(2004, 1, 24)
         await client.change_presence(activity=discord.Game('жизнь', start=datetime.combine(d, t)))
 
-    @client.event
+    """@client.event
     async def on_message(ctx):
         text = ctx.content
         print(text)
@@ -54,7 +54,7 @@ def start():
 
         elif any(blw in text.lower().split() for blw in blacklist):
             await ctx.channel.send('осуждаю')
-            return
+            return"""
 
     client.run(TOKEN_AUTH, bot=False)
 
