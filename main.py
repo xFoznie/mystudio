@@ -47,7 +47,7 @@ def start():
                     channels.append(i)
             try:
                 await curr.connect()
-            except ClientException:
+            except discord.errors.ClientException:
                 bot.voice_clients[0].disconnect()
                 await curr.connect()
             
