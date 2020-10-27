@@ -45,7 +45,12 @@ def start():
             for i in ctx.guild.voice_channels:
                 if i.id != curr.id:
                     channels.append(i)
-            await curr.connect()
+            try:
+                await curr.connect()
+            except ClientException:
+                bot.voice_clients[0].disconnect()
+                await curr.connect()
+            
             vc = bot.voice_clients[0]
             for _ in range(10):
                 await vc.move_to(curr)
