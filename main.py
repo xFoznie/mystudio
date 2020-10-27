@@ -7,6 +7,8 @@ from config import settings
 import discord
 from discord.ext import commands
 
+import os
+
 
 def start():
     bot = commands.Bot(command_prefix=settings['prefix'])
@@ -52,9 +54,10 @@ def start():
             await vc.disconnect()
 
     print()
-    bot.run(settings['token'])
+    bot.run(token)
 
 
 if __name__ == '__main__':
     print('starting')
+    token = os.environ.get('BOT_TOKEN')
     start()
