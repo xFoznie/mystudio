@@ -57,6 +57,7 @@ def start():
                 await vc.move_to(channels[0])
 
             await vc.disconnect()
+            await ctx.message.delete()
 
     print()
     bot.run(token)
